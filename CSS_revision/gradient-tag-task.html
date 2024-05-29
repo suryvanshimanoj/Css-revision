@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradiant-task</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            float: left;
+            margin-top: 30px;
+            margin-left: 10px;
+            color: white;
+            background-image: linear-gradient(45deg, red 20%, green);
+        }
+        .main {
+            height: 200px;
+            width: 200px;
+            background-image: repeating-linear-gradient(red 10%, blue 20%, black 30%);   
+        }
+        .main-1 {
+            height: 200px;
+            width: 200px;
+           background-image: radial-gradient(red 10%, green,blue); 
+        }
+        .main-2 {
+            height: 200px;
+            width: 200px;
+           background-image:repeating-radial-gradient(blue 10%, green 20%, black 30%); 
+        }
+        .main-3 {
+            height: 200px;
+            width: 200px;
+            background-image:repeating-conic-gradient(red 10%, blue 15%, yellow 18%, black 20%, green 25%);
+        }
+        .main-4 {
+            height: 200px;
+            width: 200px;
+            background-image: conic-gradient(red,black,yellow,blue,green);
+        }
+        .main-5 {
+            height: 200px;
+            width: 200px;
+            background-image: conic-gradient(red 0deg 90deg, blue 90deg 180deg, yellow 180deg 270deg, black 270deg 360deg);
+        }
+    </style>
+</head>
+<body>
+    <div>linear-gradient</div>
+    <div class="main">repeating-linear-gradient</div>
+    <div class="main-1">radial-gradient</div>
+    <div class="main-2">repeating-radial-gradient</div>
+    <div class="main-3">repeating-conic-gradient</div>
+    <div class="main-4">conic-gradient</div>
+    <div class="main-5">conic-gradient</div>
+</body>
+</html>

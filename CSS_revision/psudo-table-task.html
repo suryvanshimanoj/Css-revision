@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo-table</title>
+    <style>
+        table>thead>tr {
+            background-color: dodgerblue;
+            color: lawngreen;
+            font-size: 20px;
+            font-family: cursive;
+        }
+        table>tbody>tr:nth-child(odd) {
+            background-color: aqua;
+            color: red;
+        }
+        table>tbody>tr:nth-child(even){
+            background-color:hotpink;
+            color: white;
+        }
+        table>tfoot>tr{
+            background-color: green;
+        }
+        /* ................................................... */
+        ol li:first-child{
+            color: red;
+        }
+        ol li:last-child{
+            color: blue;
+        }
+        ol li:nth-child(even){
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" width="500">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mobile</td>
+                <td>11999.9</td>
+            </tr>
+            <tr>
+                <td>TV</td>
+                <td>50999.8</td>
+            </tr>
+            <tr>
+                <td>Laptop</td>
+                <td>49999.9</td>
+            </tr>
+            <tr>
+                <td> Jeans</td>
+                <td>1599.9</td>
+            </tr>
+            <tr>
+                <td>T-shart</td>
+                <td>999.9</td>
+            </tr>
+            <tr>
+                <td>Shoe</td>
+                <td>499.9</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2" align="center"><b>Royal Mart Gwalior MP</b></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQUERY</li>
+        <li>React</li>
+    </ol>
+</body>
+</html>

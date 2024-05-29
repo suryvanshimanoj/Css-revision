@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-tag</title>
+    <style>
+        span {
+            color: blue;
+        }
+        body * {
+            border: 2px solid red;
+            display: inline-block;
+            padding: 20px;
+            transition: 1s;
+        }
+        li {
+            /* display: none; */
+            /* visibility: hidden; */
+            opacity: 0;
+        }
+        ul:hover li {
+            /* display: inline-block; */
+            /* visibility: visible; */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div>Grand Father 
+        <ul>Father 
+            <li>Child 
+                <span>span</span>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate-animation-task</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            position: relative;
+            animation-name: one;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+            animation-direction: alternate-reverse;
+        }
+        @keyframes one {
+            /* from{
+                background-color: red;
+            }
+            to {
+                background-color: black;
+            } */
+
+            0% {
+                top: 0;
+                left: 0;
+                background-color: red;
+            }
+
+            25% {
+                left: 50%;
+                top: 0;
+                background-color: yellow;
+            }
+
+            50%{
+                top: 500px;
+                left: 50%;
+            }
+
+            75% {
+                top: 500px;
+                left: 0;
+                background-color: black;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                background-color: chartreuse;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

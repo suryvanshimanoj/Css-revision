@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudoElement-task</title>
+    <style>
+        div::first-letter {
+            color: red;
+            font-size: 50px;
+        }
+        div::first-line {
+            color: green;
+        }
+        /* ..........marker start......................................... */
+
+        li::marker {
+            color:hotpink;
+        }
+        li::first-letter {
+            color: blue;
+        }
+        li::first-line {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Praesentium reiciendis nihil optio necessitatibus ipsam veritatis <br> corrupti, dolorem cumque illo officia voluptas quos quod sequi <br> ipsa ab doloribus  deserunt architecto? Ab?</div>
+
+    <ul>
+        <li>Html</li>
+        <li>Css</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+        <li>Jquery</li>
+        <li>React</li>
+    </ul>
+</body>
+</html>

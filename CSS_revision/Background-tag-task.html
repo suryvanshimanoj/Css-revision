@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-tag-task</title>
+    <style>
+        div {
+            width: 300px;
+            height: 350px;
+            border: 5px solid red;
+            background-image: url(../html-top/home-1/Images/Untitled.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            text-align: justify;
+        }
+        div::first-letter {
+            color: chartreuse;
+            font-size: 30px;
+        }
+        div::first-line{
+            color: aqua;
+        }
+        div::selection{
+            color: blue;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis deleniti deserunt repudiandae tenetur eligendi a dolore at pariatur. Id dolorum tempore maiores rem eaque ex deleniti molestias nihil qui ducimus.
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-task_A</title>
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        div {
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: 5px 5px;
+        }
+        .one{
+            padding: 20px;
+            border: 2px solid black;
+        }
+        #two1{
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        #two2{
+           grid-column-start: 2;
+           grid-column-end: 4;
+        }
+        #two6{
+            grid-row-start: 2;
+            grid-row-end: 4;
+            grid-column-start: 4;
+        }
+    </style>
+</head>
+<body>
+    <h2> use-container-widht-80%</h2>
+    <div class="container">
+        <div>
+            <div class="one" id="two1" style="background-color: lightgreen;">1</div>
+            <div class="one" id="two2" style="background-color: lightgreen;">2</div>
+            <div class="one" id="two3" style="background-color: red;">3</div>
+            <div class="one" id="two4" style="background-color: yellow;">4</div>
+            <div class="one" id="two5" style="background-color: red;">5</div>
+            <div class="one" id="two6" style="background-color: lightgreen;">6</div>
+            <div class="one" id="two7" style="background-color: red;">7</div>
+            <div class="one" id="two8" style="background-color: yellow;">8</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-tag</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            background-color: chartreuse;
+            border-top: 4px solid red;
+            border-bottom: 4px solid black;
+            border-left: 3px solid blue;
+            border-right: 3px solid yellow;
+            border-radius: 100px;
+            border-width: 4px;
+            margin: 45px;
+        }
+
+        #one {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(168, 3, 168);
+            border-top: 3px solid black;
+            border-bottom: 3px solid red;
+            border-left: 3px solid yellow;
+            border-right: 3px solid blue;
+            border-width: 3px;
+        }
+
+        marquee {
+            color: aqua;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+
+        .two {
+            height: 200px;
+            width: 200px;
+            background-color: dodgerblue;
+            border: 3px solid black;
+            border-radius: 0px;
+            outline-style: dashed;
+            outline-color: red;
+            outline-width: 5px;
+            outline-offset: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="one">
+            <marquee behavior="" direction="" a>Tops / Tech</marquee>
+        </div>
+    </div>
+
+    <div class="two"></div>
+</body>
+
+</html>
